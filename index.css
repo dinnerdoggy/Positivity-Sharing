@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B1924;
+    color: #FFFFFF;
+    font-family: Josefin Sans;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img {
+    width: 90px;
+    margin: 0 auto;
+}
+
+textarea {
+    padding: 12px 19px;
+    background-color: #444059;
+    color: #8F8F8F;
+    max-width: 300px;
+    width: 315px;  
+    height: 115px;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28A9F1;
+    height: 60px;
+    width: 337px;
+}
