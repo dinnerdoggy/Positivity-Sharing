@@ -4,6 +4,7 @@ html, body {
     background-color: #1B1924;
     color: #FFFFFF;
     font-family: Josefin Sans;
+    text-align: center;
 }
 
 .container {
@@ -37,4 +38,24 @@ button {
     background-color: #28A9F1;
     height: 60px;
     width: 337px;
+}
+
+ul {
+    color: black;
+}
+
+ul li {
+    gap: 10px;
+    list-style: none;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+ul li:hover {
+    background-color: #C6B79B;
+    cursor: pointer;
 }
