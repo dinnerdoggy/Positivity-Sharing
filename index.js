@@ -52,6 +52,7 @@ publishButtonEl.addEventListener("click", function() {
 onValue(endorsementListInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
+        itemsArray.reverse()
     
         clearEndorsementListEl()
         
@@ -63,6 +64,6 @@ onValue(endorsementListInDB, function(snapshot) {
             appendToEndorsementListEl(currentItem)
         }    
     } else {
-        endorsementListEl.innerHTML = "No items here... yet"
+        endorsementListEl.innerHTML = ""
     }
 })

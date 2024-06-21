@@ -5,6 +5,7 @@ html, body {
     color: #FFFFFF;
     font-family: Josefin Sans;
     text-align: center;
+    user-select: none;
 }
 
 .container {
@@ -40,22 +41,27 @@ button {
     width: 337px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #0e91d8;
+}
+
 ul {
     color: black;
 }
 
 ul li {
-    gap: 10px;
+    margin-bottom: 10px;
     list-style: none;
     font-size: 20px;
     background-color: #FFFFFF;
     padding: 15px;
-    border-radius: 8px;
+    word-break: break-all;
     flex-grow: 1;
-    text-align: center;
+    text-align:left;
 }
 
 ul li:hover {
-    background-color: #C6B79B;
+    background-color: #e6e6e6;
     cursor: pointer;
 }
