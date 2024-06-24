@@ -31,7 +31,7 @@ function appendToEndorsementListEl(item) {
     
     newEl.textContent = itemValue
     
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `endorsementList/${itemID}`)
         
         remove(exactLocationOfItemInDB)
@@ -62,6 +62,9 @@ onValue(endorsementListInDB, function(snapshot) {
             let currentItemValue = currentItem[1]
             
             appendToEndorsementListEl(currentItem)
+            if (itemsArray.length > 5) {
+                itemsArray.pop()
+            }
         }    
     } else {
         endorsementListEl.innerHTML = ""

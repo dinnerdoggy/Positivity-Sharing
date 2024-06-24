@@ -11,8 +11,11 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    max-width: 315px;
+    width: 100%;
     margin: 30px auto;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 img {
@@ -24,12 +27,13 @@ textarea {
     padding: 12px 19px;
     background-color: #444059;
     color: #8F8F8F;
-    max-width: 300px;
+    max-width: 315px;
     width: 315px;  
     height: 115px;
     border: none;
     border-radius: 8px;
     resize: none;
+    box-sizing: border-box;
 }
 
 button {
@@ -38,7 +42,8 @@ button {
     border-radius: 8px;
     background-color: #28A9F1;
     height: 60px;
-    width: 337px;
+    width: 315px;
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -48,17 +53,22 @@ button:hover {
 
 ul {
     color: black;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul li {
+ul li { 
     margin-bottom: 10px;
     list-style: none;
     font-size: 20px;
     background-color: #FFFFFF;
     padding: 15px;
     word-break: break-all;
-    flex-grow: 1;
     text-align:left;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 ul li:hover {
